@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.0.2
+-----
+* Minor fixes
+
 1.0.0
 -----
 * Bootstrap 3.0 @ [32468b087b](https://github.com/twbs/bootstrap/commit/32468b087b615d1ed710f9118ff4f669cc5ad5e8)
