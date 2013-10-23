@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    twbs_less_rails (1.0.0)
+    twbs_less_rails (2.0.0)
       less-rails
       rails (>= 3.2.15)
       therubyracer
@@ -34,7 +34,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     ansi (1.4.3)
-    arel (4.0.0)
+    arel (4.0.1)
     atomic (1.1.14)
     builder (3.1.4)
     capybara (2.1.0)

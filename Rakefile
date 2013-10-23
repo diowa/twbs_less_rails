@@ -32,7 +32,7 @@ SOURCE_FILES = {
   bootstrap_javascripts: File.expand_path('src/twbs/bootstrap/js/*.js'),
   fontawesome_stylesheets: File.expand_path('src/FortAwesome/Font-Awesome/less/*.less'),
   glyphicons_fonts: File.expand_path('src/twbs/bootstrap/fonts/glyphicons-halflings-regular.*'),
-  fontawesome_fonts: File.expand_path('src/FortAwesome/Font-Awesome/font/fontawesome-webfont.*'),
+  fontawesome_fonts: File.expand_path('src/FortAwesome/Font-Awesome/fonts/fontawesome-webfont.*'),
 }
 
 DESTINATION_FOLDERS = {
@@ -58,10 +58,6 @@ task :update_assets do
 
   puts 'Copying new assets...'
   copy_source_files_to_destination_folders
-
-  puts 'Removing unneeded assets...'
-  # TODO remove when FA 4.0.0 will be released
-  FileUtils.rm_rf "#{DESTINATION_FOLDERS[:fontawesome_stylesheets]}/font-awesome-ie7.less"
 
   puts 'Adding respond.js...'
   FileUtils.cp File.expand_path('src/scottjehl/Respond/respond.src.js'), File.expand_path('vendor/assets/javascripts/respond.js')
@@ -91,8 +87,9 @@ end
 def update_fontawesome_paths
   file_name = "#{DESTINATION_FOLDERS[:fontawesome_stylesheets]}/path.less"
   text = File.read(file_name)
-  text.gsub! /url\(\'@{FontAwesomePath}\/([\w\-.#]+)[^\)]*\)/, "asset-url('\\1')"
+  text.gsub! /url\(\'@{fa-font-path}\/([\w\-.#]+)[^\)]*\)/, "asset-url('\\1')"
   text.gsub! "fontawesome-webfont.eot') format('embedded-opentype')", "fontawesome-webfont.eot?\#iefix') format('embedded-opentype')"
+  text.gsub! "asset-url('fontawesome-webfont.svg') format('svg');", "asset-url('fontawesome-webfont.svg#fontawesomeregular') format('svg');"
   text.gsub! "//  src: asset-url('FontAwesome.otf') format('opentype'); // used when developing fonts", ''
   File.open(file_name, 'w') { |file| file.puts text }
 end

@@ -1,4 +1,4 @@
-# Contributing to Bootstrap
+# Contributing to Twbs Less Rails
 
 Looking to contribute something to Twbs Less Rails? **Here's how you can help.**
 
