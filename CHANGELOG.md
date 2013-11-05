@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.4.0
+-----
+* Bootstrap 3.0.1 @ [13b96677ba](https://github.com/twbs/bootstrap/tree/13b96677bacf3de360a762d11ad0e0007f0710da)
+* FontAwesome 4.0.3 @ [0373b63c16](https://github.com/FortAwesome/Font-Awesome/tree/0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6)
+
 2.3.0
 -----
 * Bootstrap 3.0.1 @ [de271bf612](https://github.com/twbs/bootstrap/tree/de271bf6122d2d43a449518c08d00f9a507af874)
