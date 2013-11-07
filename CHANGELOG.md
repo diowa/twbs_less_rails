@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2.5.0
+-----
+* Bootstrap 3.0.2 @ [463343af63](https://github.com/twbs/bootstrap/tree/463343af63344dbbc3db04f40b0b804baa919b7e)
+
 2.4.0
 -----
 * Bootstrap 3.0.1 @ [13b96677ba](https://github.com/twbs/bootstrap/tree/13b96677bacf3de360a762d11ad0e0007f0710da)

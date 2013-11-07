@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    twbs_less_rails (2.4.0)
+    twbs_less_rails (2.5.0)
       less-rails
       rails (>= 3.2.15)
       therubyracer
