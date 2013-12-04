@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.5.1
+-----
+* Rails 4.0.2
+* Rails 3.2.16
+
 2.5.0
 -----
 * Bootstrap 3.0.2 @ [463343af63](https://github.com/twbs/bootstrap/tree/463343af63344dbbc3db04f40b0b804baa919b7e)
