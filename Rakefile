@@ -27,6 +27,24 @@ end
 
 task default: :test
 
+SUBMODULES = {
+  bootstrap: {
+    name: 'Bootstrap',
+    sample_version: 'v3.0.3',
+    folder: File.expand_path('src/twbs/bootstrap')
+  },
+  fontawesome: {
+    name: 'Font Awesome',
+    sample_version: 'v4.0.3',
+    folder: File.expand_path('src/FortAwesome/Font-Awesome')
+  },
+  respond_js: {
+    name: 'Respond.js',
+    sample_version: '1.4.1',
+    folder: File.expand_path('src/scottjehl/Respond')
+  }
+}
+
 SOURCE_FILES = {
   bootstrap_stylesheets: File.expand_path('src/twbs/bootstrap/less/*.less'),
   bootstrap_javascripts: File.expand_path('src/twbs/bootstrap/js/*.js'),
@@ -43,33 +61,49 @@ DESTINATION_FOLDERS = {
   fontawesome_fonts: File.expand_path('app/assets/fonts'),
 }
 
-desc "Update assets"
-task :update_assets do
-  # git submodule add https://github.com/FortAwesome/Font-Awesome.git src/FortAwesome/Font-Awesome/
-  # git submodule add https://github.com/scottjehl/Respond.git src/scottjehl/Respond
-  # git submodule add https://github.com/twbs/bootstrap.git src/twbs/bootstrap
+namespace :update do
+  SUBMODULES.each do |submodule, v|
+    desc "Updates #{v[:name]} at specified tag"
+    task submodule, :tag do |t, args|
+      if args[:tag]
+        update_submodule(SUBMODULES[submodule], args[:tag])
+      else
+        puts "Please specify a tag, e.g: rake #{t}[#{SUBMODULES[submodule][:sample_version]}]"
+      end
+    end
+  end
 
-  puts 'Updating submodules...'
-  `git submodule update --init`
-  `git submodule foreach git pull origin master`
+  desc "Update assets"
+  task :assets do
+    # git submodule add https://github.com/FortAwesome/Font-Awesome.git src/FortAwesome/Font-Awesome/
+    # git submodule add https://github.com/scottjehl/Respond.git src/scottjehl/Respond
+    # git submodule add https://github.com/twbs/bootstrap.git src/twbs/bootstrap
 
-  puts 'Preparing destination folders...'
-  remove_content_from_destination_folders
+    puts 'Preparing destination folders...'
+    remove_content_from_destination_folders
 
-  puts 'Copying new assets...'
-  copy_source_files_to_destination_folders
+    puts 'Copying new assets...'
+    copy_source_files_to_destination_folders
 
-  puts 'Adding respond.js...'
-  FileUtils.cp File.expand_path('src/scottjehl/Respond/respond.src.js'), File.expand_path('vendor/assets/javascripts/respond.js')
+    puts 'Adding respond.js...'
+    FileUtils.cp File.expand_path('src/scottjehl/Respond/src/respond.js'), File.expand_path('vendor/assets/javascripts/respond.js')
 
-  puts 'Updating font paths...'
-  update_fontawesome_paths
-  update_glyphicons_paths
+    puts 'Updating font paths...'
+    update_fontawesome_paths
+    update_glyphicons_paths
 
-  puts 'Disabling glyphicons...'
-  disable_glyphicons
+    puts 'Disabling glyphicons...'
+    disable_glyphicons
 
-  puts 'Done. RUN TESTS NOW!'
+    puts 'Done. RUN TESTS NOW!'
+  end
+end
+
+private
+def update_submodule(submodule, tag)
+  return unless tag
+  puts "Updating #{submodule[:name]} at #{tag}..."
+  `cd #{submodule[:folder]} && exec git pull origin #{tag}`
 end
 
 def remove_content_from_destination_folders
@@ -98,7 +132,7 @@ def update_glyphicons_paths
   icon_font_name = File.read("#{DESTINATION_FOLDERS[:bootstrap_stylesheets]}/variables.less").match(/@icon\-font\-name:\s+"([^\"]+)"/)[1]
   file_name = "#{DESTINATION_FOLDERS[:bootstrap_stylesheets]}/glyphicons.less"
   text = File.read(file_name)
-  text.gsub! /url\(\'@{icon-font-path}@{icon-font-name}/, "asset-url('#{icon_font_name}"
+  text.gsub! /~\"url\(\'@{icon-font-path}@{icon-font-name}(.*)\"/, "asset-url('#{icon_font_name}\\1"
   File.open(file_name, 'w') { |file| file.puts text }
 end
 
