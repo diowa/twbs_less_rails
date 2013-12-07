@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.6.0
+-----
+* Bootstrap v3.0.3
+* Respond.js 1.4.1
+* Submodules locked to tags instead of master branch
+
 2.5.1
 -----
 * Rails 4.0.2
