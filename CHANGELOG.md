@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2.7.0
+-----
+* Support for Ruby 2.1.0
+
 2.6.0
 -----
 * Bootstrap v3.0.3
