@@ -136,7 +136,7 @@ For more information on SemVer, please visit [http://semver.org/](http://semver.
 
 ## Copyright and license
 
-Copyright 2013 diowa under [the BSD 2-Clause license](LICENSE).
+Copyright 2014 diowa under [the BSD 2-Clause license](LICENSE).
 
 Twitter Bootstrap is licensed under the Apache License, Version 2.0
 

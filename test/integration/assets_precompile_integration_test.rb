@@ -4,11 +4,11 @@ describe "assets precompile in production environment integration" do
   FileUtils::rm_rf 'test/dummy/public/assets'
   system 'cd test/dummy && RAILS_ENV=production rake assets:precompile'
 
-  it "provides respond.js" do
+  it "provides Respond.js" do
     visit "/assets/#{get_asset_name('respond','js')}"
   end
 
-  it "provides fontawesome" do
+  it "provides Font Awesome" do
     ['eot', 'svg', 'ttf', 'woff'].each do |fmt|
       font_file = get_asset_name('fontawesome-webfont', fmt)
       # NOTE: Rails 3 skips fingerprint when asset has parameters.
@@ -20,7 +20,7 @@ describe "assets precompile in production environment integration" do
     end
   end
 
-  it "provides glyphicons" do
+  it "provides Glyphicons" do
     ['eot', 'svg', 'ttf', 'woff'].each do |fmt|
       font_file = get_asset_name('glyphicons-halflings-regular', fmt)
       # NOTE: Rails 3 skips fingerprint when asset has parameters.

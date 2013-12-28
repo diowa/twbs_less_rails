@@ -18,9 +18,6 @@ Rails.backtrace_cleaner.remove_silencers!
 
 require 'capybara/rails'
 
-require 'debugger'
-Debugger.settings[:autoeval] = true
-
 require 'turn'
 Turn.config.format = :cool
 Turn.config.natural = true
