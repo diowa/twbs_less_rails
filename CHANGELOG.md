@@ -7,6 +7,7 @@ Changelog
 * Respond.js v1.4.2
 * [dev] Removed active_record from dummy test application
 * [dev] Removed debugger and sqlite dependency
+* [dev] Does not check Gemfile.lock
 
 2.6.0
 -----
