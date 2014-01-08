@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/diowa/twbs_less_rails'
   s.summary     = 'Bootstrap and FontAwesome assets in Rails applications'
   s.description = 'Provides assets for Bootstrap and FontAwesome in your Rails application.'
-  s.license     = 'BSD 2-Clause'
+  s.license     = 'BSD-2-Clause'
 
   s.files         = `git ls-files`.split("\n") - `git ls-files -- {src/*,".*"}`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
