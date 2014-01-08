@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2.7.1
+-----
+* Fixed license SPDX ID in gemspec
+
 2.7.0
 -----
 * Support for Ruby 2.1.0
