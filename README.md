@@ -102,6 +102,16 @@ BUNDLE_GEMFILE=$PWD/gemfiles/Gemfile.rails-3.2.x rake
 
 
 
+## Contributing
+
+Please read through our [contributing guidelines](CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+
+More over, if your pull request contains patches or features, you must include relevant unit tests.
+
+Editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+
+
+
 ## Versioning
 
 For transparency and insight into our release cycle, and for striving to maintain backward compatibility, Twbs Less Rails will be maintained under the Semantic Versioning guidelines as much as possible. Twbs Less Rails will not follow Bootstrap's version number.
@@ -136,7 +146,7 @@ For more information on SemVer, please visit [http://semver.org/](http://semver.
 
 ## Copyright and license
 
-Copyright 2013 diowa under [the BSD 2-Clause license](LICENSE).
+Copyright 2014 diowa under [the BSD 2-Clause license](LICENSE).
 
 Twitter Bootstrap is licensed under the Apache License, Version 2.0
 
