@@ -25,10 +25,8 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'coveralls'
-  s.add_development_dependency 'debugger'
-  s.add_development_dependency 'minitest', '~> 4'
+  s.add_development_dependency 'minitest', '~> 4' # NOTE: version 5 is not supported by Rails 4.0
   s.add_development_dependency 'rake'
   s.add_development_dependency 'simplecov'
-  s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'turn'
 end

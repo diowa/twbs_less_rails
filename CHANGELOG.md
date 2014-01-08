@@ -1,11 +1,19 @@
 Changelog
 =========
 
+2.7.0
+-----
+* Support for Ruby 2.1.0
+* Respond.js v1.4.2
+* [dev] Removed active_record from dummy test application
+* [dev] Removed debugger and sqlite dependency
+* [dev] Does not check Gemfile.lock
+
 2.6.0
 -----
 * Bootstrap v3.0.3
 * Respond.js 1.4.1
-* Submodules locked to tags instead of master branch
+* Submodules locked to tags instead of master branches
 
 2.5.1
 -----

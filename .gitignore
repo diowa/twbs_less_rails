@@ -24,5 +24,6 @@ test/dummy/public/assets
 # Others
 coverage
 tmp
+Gemfile.lock
 gemfiles/*.lock
 *.gem
