@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.8.0
+
+* Bootstrap v3.1.0
+* Updated Bootstrap license to MIT
+
 ## 2.7.2
 
 * Reformatted changelog
