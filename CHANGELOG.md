@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.8.1
+
+* Fixed gem version number
+
 ## 2.8.0
 
 * Bootstrap v3.1.0
