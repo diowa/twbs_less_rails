@@ -148,7 +148,7 @@ For more information on SemVer, please visit [http://semver.org/](http://semver.
 
 Copyright 2014 diowa under [the BSD 2-Clause license](LICENSE).
 
-Twitter Bootstrap is licensed under the Apache License, Version 2.0
+Twitter Bootstrap is licensed under the MIT License
 
 Font Awesome is licensed under the MIT License
 
