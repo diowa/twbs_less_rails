@@ -35,11 +35,13 @@ describe "assets precompile in production environment integration" do
   it "overrides Bootstrap variables" do
     visit "/assets/#{get_asset_name('application', 'css')}"
     page.text.must_include 'color: #d10d10;'
+    page.text.must_include 'color: #89090a;' # automatically generated hover
   end
 
   it "overrides Bootstrap variables in user stylesheets" do
     visit "/assets/#{get_asset_name('application', 'css')}"
     page.text.must_include '.test-class { color: #d10d10; }'
+    page.text.must_include '.test-hover-class { color: #89090a; }'
   end
 
   private
