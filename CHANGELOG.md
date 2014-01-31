@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.8.2
+
+* Improved tests
+
 ## 2.8.1
 
 * Fixed gem version number
