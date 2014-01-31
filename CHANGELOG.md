@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.8.3
+
+* Improved glyphicons paths
+
 ## 2.8.2
 
 * Improved tests

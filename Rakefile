@@ -129,10 +129,9 @@ def update_fontawesome_paths
 end
 
 def update_glyphicons_paths
-  icon_font_name = File.read("#{DESTINATION_FOLDERS[:bootstrap_stylesheets]}/variables.less").match(/@icon\-font\-name:\s+"([^\"]+)"/)[1]
   file_name = "#{DESTINATION_FOLDERS[:bootstrap_stylesheets]}/glyphicons.less"
   text = File.read(file_name)
-  text.gsub! /~\"url\(\'@{icon-font-path}@{icon-font-name}(.*)\"/, "asset-url('#{icon_font_name}\\1"
+  text.gsub! /~\"url\(\'@{icon-font-path}(.*)\"/, "asset-url('\\1"
   File.open(file_name, 'w') { |file| file.puts text }
 end
 
