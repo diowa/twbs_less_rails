@@ -2,6 +2,10 @@
 
 ## 2.8.3
 
+* Bootstrap v3.1.1
+
+## 2.8.3
+
 * Improved glyphicons paths
 
 ## 2.8.2
