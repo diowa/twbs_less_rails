@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.9.0
+
+* Bootstrap v3.1.1
+
 ## 2.8.3
 
 * Improved glyphicons paths
