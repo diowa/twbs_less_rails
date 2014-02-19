@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.9.1
+
+* Updated Rails dependency to 3.2.17
+
 ## 2.9.0
 
 * Bootstrap v3.1.1
