@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.10.0
+
+* Support for Rails 4.1.0.rc1
+
 ## 2.9.1
 
 * Updated Rails dependency to 3.2.17

@@ -3,8 +3,8 @@ source "https://rubygems.org"
 gemspec path: '../'
 
 # Dummy application dependencies
-gem 'rails', '3.2.17'
+gem 'rails', '4.1.0.rc1'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'uglifier'
-gem 'minitest', '~> 4'
+gem 'minitest', '~> 5'
