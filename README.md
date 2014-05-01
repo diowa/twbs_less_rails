@@ -13,6 +13,7 @@ Brings [Bootstrap](http://getbootstrap.com/) and [Font Awesome](http://fontaweso
 
 Add the gem to your Gemfile
 ```rb
+gem 'less-rails'
 gem 'twbs_less_rails'
 ```
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.10.1
+
+* Improved readme
+
 ## 2.10.0
 
 * Support for Rails 4.1.0.rc2
