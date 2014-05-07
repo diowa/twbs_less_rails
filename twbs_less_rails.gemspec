@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.add_runtime_dependency 'rails', '>= 3.2.17'
+  s.add_runtime_dependency 'rails', '>= 3.2.18'
   s.add_runtime_dependency 'therubyracer'
   s.add_runtime_dependency 'less-rails', '>= 2.5.0'
 
