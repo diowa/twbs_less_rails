@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.10.3
+
+* Updated Rails dependencies
+
 ## 2.10.2
 
 * Fixed generator for Rails 4. Please check that `twbs.less` is required before `require_tree .` in your `application.css`
