@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.11.0
+
+* Support for Rails 4.1.2 and 4.0.6
+* Fontawesome 4.1.0
+
 ## 2.10.3
 
 * Updated Rails dependencies

@@ -121,10 +121,10 @@ end
 def update_fontawesome_paths
   file_name = "#{DESTINATION_FOLDERS[:fontawesome_stylesheets]}/path.less"
   text = File.read(file_name)
-  text.gsub! /url\(\'@{fa-font-path}\/([\w\-.#]+)[^\)]*\)/, "asset-url('\\1')"
+  text.gsub! /~?"?url\(\'@{fa-font-path}\/([\w\-.#]+)[^\)]*\)(.*)"/, "asset-url('\\1')\\2"
   text.gsub! "fontawesome-webfont.eot') format('embedded-opentype')", "fontawesome-webfont.eot?\#iefix') format('embedded-opentype')"
   text.gsub! "asset-url('fontawesome-webfont.svg') format('svg');", "asset-url('fontawesome-webfont.svg#fontawesomeregular') format('svg');"
-  text.gsub! "//  src: asset-url('FontAwesome.otf') format('opentype'); // used when developing fonts", ''
+  text.gsub! "//  src: url('@{fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts", ''
   File.open(file_name, 'w') { |file| file.puts text }
 end
 
