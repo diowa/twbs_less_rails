@@ -2,8 +2,9 @@
 
 ## 2.11.0
 
-* Support for Rails 4.1.2 and 4.0.6
+* bootstrap 3.2.0
 * Fontawesome 4.1.0
+* Support for Rails 4.1.2 and 4.0.6
 
 ## 2.10.3
 
