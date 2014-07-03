@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.11.1
+
+* Updated Rails dependencies
+* Bumped up version
+
 ## 2.11.0
 
 * bootstrap 3.2.0
