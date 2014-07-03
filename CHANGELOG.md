@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.11.0
+
+* bootstrap 3.2.0
+* Fontawesome 4.1.0
+* Updated Rails dependencies
+
 ## 2.10.3
 
 * Updated Rails dependencies

@@ -47,6 +47,7 @@ SUBMODULES = {
 
 SOURCE_FILES = {
   bootstrap_stylesheets: File.expand_path('src/twbs/bootstrap/less/*.less'),
+  bootstrap_stylesheets_mixins: File.expand_path('src/twbs/bootstrap/less/mixins/*.less'),
   bootstrap_javascripts: File.expand_path('src/twbs/bootstrap/js/*.js'),
   fontawesome_stylesheets: File.expand_path('src/FortAwesome/Font-Awesome/less/*.less'),
   glyphicons_fonts: File.expand_path('src/twbs/bootstrap/fonts/glyphicons-halflings-regular.*'),
@@ -55,6 +56,7 @@ SOURCE_FILES = {
 
 DESTINATION_FOLDERS = {
   bootstrap_stylesheets: File.expand_path('vendor/assets/stylesheets/twbs/bootstrap'),
+  bootstrap_stylesheets_mixins: File.expand_path('vendor/assets/stylesheets/twbs/bootstrap/mixins'),
   bootstrap_javascripts: File.expand_path('vendor/assets/javascripts/twbs/bootstrap'),
   fontawesome_stylesheets: File.expand_path('vendor/assets/stylesheets/fontawesome'),
   glyphicons_fonts: File.expand_path('app/assets/fonts'),
@@ -114,6 +116,7 @@ end
 
 def copy_source_files_to_destination_folders
   SOURCE_FILES.each do |k, v|
+    FileUtils.mkdir_p DESTINATION_FOLDERS[k] unless File.directory?(DESTINATION_FOLDERS[k])
     FileUtils.cp Dir.glob(v), DESTINATION_FOLDERS[k]
   end
 end
@@ -121,17 +124,17 @@ end
 def update_fontawesome_paths
   file_name = "#{DESTINATION_FOLDERS[:fontawesome_stylesheets]}/path.less"
   text = File.read(file_name)
-  text.gsub! /url\(\'@{fa-font-path}\/([\w\-.#]+)[^\)]*\)/, "asset-url('\\1')"
+  text.gsub! /~?"?url\(\'@{fa-font-path}\/([\w\-.#]+)[^\)]*\)(.*)"/, "asset-url('\\1')\\2"
   text.gsub! "fontawesome-webfont.eot') format('embedded-opentype')", "fontawesome-webfont.eot?\#iefix') format('embedded-opentype')"
   text.gsub! "asset-url('fontawesome-webfont.svg') format('svg');", "asset-url('fontawesome-webfont.svg#fontawesomeregular') format('svg');"
-  text.gsub! "//  src: asset-url('FontAwesome.otf') format('opentype'); // used when developing fonts", ''
+  text.gsub! "//  src: url('@{fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts", ''
   File.open(file_name, 'w') { |file| file.puts text }
 end
 
 def update_glyphicons_paths
   file_name = "#{DESTINATION_FOLDERS[:bootstrap_stylesheets]}/glyphicons.less"
   text = File.read(file_name)
-  text.gsub! /~\"url\(\'@{icon-font-path}(.*)\"/, "asset-url('\\1"
+  text.gsub! /url\(\'@{icon-font-path}(.*)/, "asset-url('\\1"
   File.open(file_name, 'w') { |file| file.puts text }
 end
 
