@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.11.3
+
+* Fixed rake task
+
 ## 2.11.2
 
 * Tested against Rails 4.0.9 and 4.1.5
