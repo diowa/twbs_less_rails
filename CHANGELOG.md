@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.11.2
+
+* Tested against Rails 4.0.9 and 4.1.5
+* Bumped up version
+
 ## 2.11.1
 
 * Updated Rails dependencies
