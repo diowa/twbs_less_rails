@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.11.4
+
+* Updated badges
+
 ## 2.11.3
 
 * Fixed rake task
