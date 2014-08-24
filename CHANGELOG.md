@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.12.0
+
+* Automatically requires `less-rails` and `therubyracer`
+* Updated Rails dependency
+* Using Appraisal to run tests
+
 ## 2.11.4
 
 * Updated badges

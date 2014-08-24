@@ -13,7 +13,6 @@ Brings [Bootstrap](http://getbootstrap.com/) and [Font Awesome](http://fontaweso
 
 Add the gem to your Gemfile
 ```rb
-gem 'less-rails'
 gem 'twbs_less_rails'
 ```
 
@@ -91,14 +90,10 @@ Take a look at [the whole list of Javascript components](/vendor/assets/javascri
 
 ## Testing
 
-To launch the tests against Rails 4, run from the root folder of the repository:
+Twbs Less Rails uses [Appraisal](https://github.com/thoughtbot/appraisal) for testing against multiple gem dependency versions.
 ```bash
-BUNDLE_GEMFILE=$PWD/gemfiles/Gemfile.rails-4.0.x rake
-```
-
-For Rails 3.2 run instead:
-```bash
-BUNDLE_GEMFILE=$PWD/gemfiles/Gemfile.rails-3.2.x rake
+appraisal install # or update, if you already have done this before
+appraisal rake
 ```
 
 
