@@ -92,7 +92,7 @@ Take a look at [the whole list of Javascript components](/vendor/assets/javascri
 
 Twbs Less Rails uses [Appraisal](https://github.com/thoughtbot/appraisal) for testing against multiple gem dependency versions.
 ```bash
-appraisal install # or update, if you already have done this before
+appraisal install # or update, if you have ran install before
 appraisal rake
 ```
 
@@ -151,3 +151,5 @@ Font Awesome is licensed under the MIT License
 Font Awesome font is licensed under the SIL Open Font License
 
 Font Awesome pictograms are licensed under the CC BY 3.0 License
+
+Respond.js is licensed under the MIT License
