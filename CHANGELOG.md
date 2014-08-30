@@ -5,6 +5,7 @@
 * Font Awesome 4.2.0
 * Automatically requires `less-rails` and `therubyracer`
 * Updated Rails dependency
+* Removed open-ended dependencies
 * Using Appraisal to run tests
 
 ## 2.11.4
