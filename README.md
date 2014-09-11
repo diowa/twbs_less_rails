@@ -92,8 +92,8 @@ Take a look at [the whole list of Javascript components](/vendor/assets/javascri
 
 Twbs Less Rails uses [Appraisal](https://github.com/thoughtbot/appraisal) for testing against multiple gem dependency versions.
 ```bash
-appraisal install # or `update`, if you ran `install` before
-appraisal rake
+$ appraisal install # or `update`, if you ran `install` before
+$ appraisal rake
 ```
 
 
