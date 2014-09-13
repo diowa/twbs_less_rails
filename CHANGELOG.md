@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.12.0
+
+* Font Awesome 4.2.0
+* Automatically requires `less-rails` and `therubyracer`
+* Updated Rails dependency
+* Removed open-ended dependencies
+* Using Appraisal to run tests
+* Tested against Rails 4.0.10 and 4.1.6
+
 ## 2.11.4
 
 * Updated badges
@@ -21,7 +30,7 @@
 ## 2.11.0
 
 * bootstrap 3.2.0
-* Fontawesome 4.1.0
+* Font Awesome 4.1.0
 * Updated Rails dependencies
 
 ## 2.10.3
@@ -129,5 +138,5 @@
 ## 1.0.0
 
 * Bootstrap 3.0.0 @ [32468b087b](https://github.com/twbs/bootstrap/tree/32468b087b615d1ed710f9118ff4f669cc5ad5e8)
-* Fontawesome 3.2.1 @ [906345058f](https://github.com/FortAwesome/Font-Awesome/tree/906345058f738c2b931f89754a319ed108e17bd8)
+* Font Awesome 3.2.1 @ [906345058f](https://github.com/FortAwesome/Font-Awesome/tree/906345058f738c2b931f89754a319ed108e17bd8)
 * Respond.js 1.3.0 @ [ad87635f83](https://github.com/scottjehl/Respond/tree/ad87635f83f8b811e1da53c082325a4b35960771)

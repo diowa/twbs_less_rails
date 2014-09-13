@@ -13,7 +13,6 @@ Brings [Bootstrap](http://getbootstrap.com/) and [Font Awesome](http://fontaweso
 
 Add the gem to your Gemfile
 ```rb
-gem 'less-rails'
 gem 'twbs_less_rails'
 ```
 
@@ -91,14 +90,10 @@ Take a look at [the whole list of Javascript components](/vendor/assets/javascri
 
 ## Testing
 
-To launch the tests against Rails 4, run from the root folder of the repository:
+Twbs Less Rails uses [Appraisal](https://github.com/thoughtbot/appraisal) for testing against multiple gem dependency versions.
 ```bash
-BUNDLE_GEMFILE=$PWD/gemfiles/Gemfile.rails-4.0.x rake
-```
-
-For Rails 3.2 run instead:
-```bash
-BUNDLE_GEMFILE=$PWD/gemfiles/Gemfile.rails-3.2.x rake
+$ appraisal install # or `update`, if you ran `install` before
+$ appraisal rake
 ```
 
 
@@ -156,3 +151,5 @@ Font Awesome is licensed under the MIT License
 Font Awesome font is licensed under the SIL Open Font License
 
 Font Awesome pictograms are licensed under the CC BY 3.0 License
+
+Respond.js is licensed under the MIT License
