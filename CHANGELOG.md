@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.12.1
+
+* Tested against Ruby 2.1.3
+
 ## 2.12.0
 
 * Font Awesome 4.2.0
