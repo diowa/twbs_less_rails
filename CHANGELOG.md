@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.13.0
+
+* Tested against Rails 3.2.20, 4.0.11 and 4.1.7
+* Open-ended dependencies for development gems
+
 ## 2.12.1
 
 * Tested against Ruby 2.1.3
