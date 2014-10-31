@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.14.0
+
+* bootstrap 3.3.0
+
 ## 2.13.0
 
 * Tested against Rails 3.2.20, 4.0.11 and 4.1.7
