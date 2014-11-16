@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.15.0
+
+* bootstrap 3.3.1
+
 ## 2.14.0
 
 * bootstrap 3.3.0
