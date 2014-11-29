@@ -1,5 +1,24 @@
 # Changelog
 
+## 2.15.1
+
+* Tested against Rails 3.2.21, 4.0.12 and 4.1.8
+* Improved dependencies
+* Improved readme
+
+## 2.15.0
+
+* bootstrap 3.3.1
+
+## 2.14.0
+
+* bootstrap 3.3.0
+
+## 2.13.0
+
+* Tested against Rails 3.2.20, 4.0.11 and 4.1.7
+* Open-ended dependencies for development gems
+
 ## 2.12.1
 
 * Tested against Ruby 2.1.3

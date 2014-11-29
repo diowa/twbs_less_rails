@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "rails", "4.0.10"
+gem "rails", "4.0.12"
 gem "uglifier"
 gem "minitest", "~> 4"
 
