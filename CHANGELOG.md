@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.16.0
+
+* Rails 4.2.0
+
 ## 2.15.1
 
 * Tested against Rails 3.2.21, 4.0.12 and 4.1.8
