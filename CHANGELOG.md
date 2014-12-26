@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.16.1
+
+* Ruby 2.2 compatibility
+
 ## 2.16.0
 
 * Rails 4.2.0
