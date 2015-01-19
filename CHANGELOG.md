@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.17.0
+
+* bootstrap 3.3.2
+
 ## 2.16.1
 
 * Ruby 2.2 compatibility
