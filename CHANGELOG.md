@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.17.1
+
+* Update coveralls badge
+
 ## 2.17.0
 
 * bootstrap 3.3.2
