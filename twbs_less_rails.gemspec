@@ -29,4 +29,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'minitest', '>= 4.7.5', '< 6.0.0'
   s.add_development_dependency 'rake', '~> 10.4'
   s.add_development_dependency 'simplecov', '~> 0.9.1'
+  s.add_development_dependency 'uglifier', '~> 2.7'
 end
