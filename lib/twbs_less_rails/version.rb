@@ -1,3 +1,3 @@
 module TwbsLessRails
-  VERSION = "2.17.1"
+  VERSION = "2.18.0"
 end

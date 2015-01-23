@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.18.0
+
+* Font Awesome 4.3.0
+* Remove coveralls token
+
 ## 2.17.1
 
 * Update coveralls badge
