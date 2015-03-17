@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.19.0
+
+* bootstrap 3.3.4
+
 ## 2.18.0
 
 * Font Awesome 4.3.0

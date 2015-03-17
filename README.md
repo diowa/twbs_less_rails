@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/diowa/twbs_less_rails/badges/gpa.svg)](https://codeclimate.com/github/diowa/twbs_less_rails)
 [![Coverage Status](https://coveralls.io/repos/diowa/twbs_less_rails/badge.svg?branch=master)](https://coveralls.io/r/diowa/twbs_less_rails?branch=master)
 
-An opinionated gem which brings [Bootstrap](http://getbootstrap.com/) and [Font Awesome](http://fontawesome.io) assets into your Rails application.
+An opinionated gem which brings [Bootstrap](http://getbootstrap.com/), [Font Awesome](http://fontawesome.io) and [Respond.js](http://github.com/scottjehl/Respond) assets into your Rails application.
 
 
 
