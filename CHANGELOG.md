@@ -3,6 +3,7 @@
 ## 2.19.0
 
 * bootstrap 3.3.4
+* Test against Rails 4.2.1 and 4.1.10
 
 ## 2.18.0
 
