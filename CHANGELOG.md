@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.20.0.dev
+
+* bootstrap 3.3.5
+* Test against Rails 3.22, 4.1.11 and 4.2.2
+
 ## 2.19.0
 
 * bootstrap 3.3.4
