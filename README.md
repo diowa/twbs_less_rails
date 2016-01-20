@@ -1,11 +1,19 @@
-# Twbs Less Rails
+# Unmaintained
+
+This gem is no longer maintained, sorry.
+
+SASS version: https://github.com/diowa/twbs_sass_rails
+
+
+
+## Twbs Less Rails
 [![Gem Version](https://badge.fury.io/rb/twbs_less_rails.svg)](http://badge.fury.io/rb/twbs_less_rails)
 [![Build Status](https://secure.travis-ci.org/diowa/twbs_less_rails.svg?branch=master)](https://travis-ci.org/diowa/twbs_less_rails)
 [![Dependency Status](https://gemnasium.com/diowa/twbs_less_rails.svg)](https://gemnasium.com/diowa/twbs_less_rails)
 [![Code Climate](https://codeclimate.com/github/diowa/twbs_less_rails/badges/gpa.svg)](https://codeclimate.com/github/diowa/twbs_less_rails)
-[![Coverage Status](https://img.shields.io/coveralls/diowa/twbs_less_rails.svg)](https://coveralls.io/r/diowa/twbs_less_rails?branch=master)
+[![Coverage Status](https://coveralls.io/repos/diowa/twbs_less_rails/badge.svg?branch=master)](https://coveralls.io/r/diowa/twbs_less_rails?branch=master)
 
-An opinionated gem which brings [Bootstrap](http://getbootstrap.com/) and [Font Awesome](http://fontawesome.io) assets into your Rails application.
+An opinionated gem which brings [Bootstrap](http://getbootstrap.com/), [Font Awesome](http://fontawesome.io) and [Respond.js](http://github.com/scottjehl/Respond) assets into your Rails application.
 
 
 
@@ -142,7 +150,7 @@ For more information on SemVer, please visit [http://semver.org/](http://semver.
 
 ## Copyright and license
 
-Copyright 2014 diowa under [the BSD 2-Clause license](LICENSE).
+Copyright 2015 diowa under [the BSD 2-Clause license](LICENSE).
 
 Twitter Bootstrap is licensed under the MIT License
 
