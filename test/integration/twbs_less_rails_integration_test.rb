@@ -27,6 +27,7 @@ describe "twbs less rails integration" do
     visit '/assets/fontawesome-webfont.svg'
     visit '/assets/fontawesome-webfont.ttf'
     visit '/assets/fontawesome-webfont.woff'
+    visit '/assets/fontawesome-webfont.woff2'
   end
 
   it "provides Glyphicons on the asset pipeline" do
@@ -34,5 +35,6 @@ describe "twbs less rails integration" do
     visit '/assets/glyphicons-halflings-regular.svg'
     visit '/assets/glyphicons-halflings-regular.ttf'
     visit '/assets/glyphicons-halflings-regular.woff'
+    visit '/assets/glyphicons-halflings-regular.woff2'
   end
 end
