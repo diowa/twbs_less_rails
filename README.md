@@ -1,4 +1,12 @@
-# Twbs Less Rails
+# Unmaintained
+
+This gem is no longer maintained, sorry.
+
+SASS version: https://github.com/diowa/twbs_sass_rails
+
+
+
+## Twbs Less Rails
 [![Gem Version](https://badge.fury.io/rb/twbs_less_rails.svg)](http://badge.fury.io/rb/twbs_less_rails)
 [![Build Status](https://secure.travis-ci.org/diowa/twbs_less_rails.svg?branch=master)](https://travis-ci.org/diowa/twbs_less_rails)
 [![Dependency Status](https://gemnasium.com/diowa/twbs_less_rails.svg)](https://gemnasium.com/diowa/twbs_less_rails)
