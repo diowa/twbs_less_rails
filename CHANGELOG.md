@@ -1,5 +1,59 @@
 # Changelog
 
+## 2.20.0
+
+* bootstrap 3.3.5
+* Test against Rails 3.22, 4.1.11 and 4.2.2
+
+## 2.19.0
+
+* bootstrap 3.3.4
+* Test against Rails 4.2.1 and 4.1.10
+
+## 2.18.0
+
+* Font Awesome 4.3.0
+* Remove coveralls token
+
+## 2.17.1
+
+* Update coveralls badge
+
+## 2.17.0
+
+* bootstrap 3.3.2
+
+## 2.16.1
+
+* Ruby 2.2 compatibility
+
+## 2.16.0
+
+* Rails 4.2.0
+
+## 2.15.1
+
+* Tested against Rails 3.2.21, 4.0.12 and 4.1.8
+* Improved dependencies
+* Improved readme
+
+## 2.15.0
+
+* bootstrap 3.3.1
+
+## 2.14.0
+
+* bootstrap 3.3.0
+
+## 2.13.0
+
+* Tested against Rails 3.2.20, 4.0.11 and 4.1.7
+* Open-ended dependencies for development gems
+
+## 2.12.1
+
+* Tested against Ruby 2.1.3
+
 ## 2.12.0
 
 * Font Awesome 4.2.0
